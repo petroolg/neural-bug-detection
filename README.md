@@ -1,14 +1,14 @@
 # neural-bug-detection
 A graph neural network designed to detect and miss bugs in python code.
 
-### Requirements installation
+## Requirements installation
 
 The project is compatible with Python>=3.9. Make sure you have the correct version. Then from the terminal run:
 ```shell script
 pip install -r requrements.txt
 ```
 
-### Data preprocessing
+## Data preprocessing
 
 1) Get raw data (python scripts), e.g. from here [Py150k](https://www.sri.inf.ethz.ch/py150)
 > :warning: **From this point on all commands should necessary be executed from the data root directory. Data root directory stores `./raw_repos` folder with your raw data (.py files).**
@@ -48,7 +48,7 @@ manual located in the same folder.
    extracted from python scripts with bugs introduced earlier in 2. step. Simultaneously it links flake8 error 
    codes with corresponding AST nodes for each file.  
    
-### Graph neural network training
+## Graph neural network training
 
 5) Construct pytorch-geometric dataset by running the following command from the data root directory.
 
